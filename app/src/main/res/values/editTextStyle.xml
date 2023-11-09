@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="NoUnderlineEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@null</item> <!-- Rimuove il background predefinito -->
+        <item name="android:paddingBottom">0dp</item> <!-- Imposta il padding inferiore a 0 per rimuovere lo spazio sotto il testo -->
+    </style>
+</resources>

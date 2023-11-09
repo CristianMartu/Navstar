@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".SavedPlaceDetail">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/center"
+            android:layout_centerHorizontal="true"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:id="@+id/detailImage"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="Name"
+            android:textSize="24sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/detailImage"
+            android:textColor="@color/colorSecondary"
+            android:id="@+id/detailName"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Address"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/detailName"
+            android:textColor="@color/colorSecondary"
+            android:textSize="18sp"
+            android:id="@+id/detailAddress"/>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/detailAddress"
+            android:id="@+id/space">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:text="Descrizione:"
+                android:textColor="@color/colorSecondary"
+                android:layout_gravity="center"
+                android:visibility="visible"
+                android:id="@+id/nameViewDescription"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/quantum_grey200"
+                android:text="Salva descrizione"
+                android:textColor="@color/colorSecondary"
+                android:visibility="invisible"
+                android:id="@+id/savedDetailSet"/>
+        </FrameLayout>
+
+        <EditText
+            style="@style/NoUnderlineEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/space"
+            android:hint="Luogo nelle vicinanze"
+            android:inputType="textMultiLine"
+            android:maxWidth="300dp"
+            android:minHeight="48dp"
+            android:textColor="#757575"
+            android:textColorHint="#757575"
+            android:textSize="18sp"
+            android:id="@+id/detailSetDetail"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detailSetDetail"
+            android:layout_marginTop="10dp"
+            android:layout_toStartOf="@+id/detailOpeningHours"
+            android:layout_centerHorizontal="true"
+            android:text="Orari: "
+            android:textColor="@color/colorSecondary"
+            android:textSize="18sp"
+            android:id="@+id/detailOpeningHoursText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="OpeningHours"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/detailSetDetail"
+            android:textColor="@color/colorSecondary"
+            android:textSize="18sp"
+            android:id="@+id/detailOpeningHours"/>
+
+        <TextView
+            android:id="@+id/detailPhoneNumberText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detailOpeningHours"
+            android:layout_marginTop="10dp"
+            android:layout_toStartOf="@id/detailPhoneNumber"
+            android:text="Telefono: "
+            android:textColor="@color/colorSecondary"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/detailPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detailOpeningHours"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="PhoneNumber"
+            android:textColor="@color/colorSecondary"
+            android:textSize="18sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorSecondary"
+            android:layout_below="@id/detailPhoneNumber"
+            android:layout_toStartOf="@+id/detailPhoneNumber"
+            android:layout_toEndOf="@+id/detailPhoneNumber"
+            android:layout_marginTop="4dp"
+            android:id="@+id/lineDetailPhoneNumber"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="5dp"
+            android:text="Rating"
+            android:layout_centerHorizontal="true"
+            android:layout_toStartOf="@+id/detailRatingText"
+            android:layout_below="@id/detailPhoneNumber"
+            android:textColor="@color/colorSecondary"
+            android:textSize="18sp"
+            android:id="@+id/detailRating"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detailPhoneNumber"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:text="Recensioni: "
+            android:textColor="@color/colorSecondary"
+            android:textSize="18sp"
+            android:id="@+id/detailRatingText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/detailPhoneNumber"
+            android:layout_toEndOf="@id/detailRatingText"
+            android:layout_marginTop="15dp"
+            android:text="UsersRating"
+            android:textColor="@color/colorSecondary"
+            android:textSize="18sp"
+            android:id="@+id/detailUsersRating" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="UriWeb"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/detailUsersRating"
+            android:textColor="@color/colorSecondary"
+            android:textSize="18sp"
+            android:id="@+id/detailUriWeb"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorSecondary"
+            android:layout_below="@id/detailUriWeb"
+            android:layout_toStartOf="@+id/detailUriWeb"
+            android:layout_toEndOf="@+id/detailUriWeb"
+            android:layout_marginTop="4dp"
+            android:id="@+id/lineDetailUriWeb"/>
+    </RelativeLayout>
+</ScrollView>

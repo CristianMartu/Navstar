@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Navstar</string>
+    <string name="button">Cerca</string>
+    <string name="editText">Inserisci la tua ricerca</string>
+    <string name="navigation_drawer_open">Apri menu</string>
+    <string name="navigation_drawer_close">Chiudi menu</string>
+    <string name="API_KEY">AIzaSyA-ZbH-lMLfmoz9uLoGipMiXcfuqGHzPT8</string>
+    <string name="Text">Inserisci la tua ricerca</string>
+</resources>
